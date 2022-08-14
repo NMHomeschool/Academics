@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Mexico Homeschool</title>
+    <style>
+        @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+            :root {
+            --bg: #f5dcf7;
+            --col: #111;
+            --heading: #14023c;
+            --subheading: #120116;
+            --links: #0b93f1;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+            --bg: #111;
+            --col: #fff;
+            --heading: #c8f7d1;
+            --subheading: #33c1ea;
+            --links: #33c1ea;
+            }
+        }
+        body {
+            background: var(--bg);
+            color: var(--col);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 34em;
+            margin: 0 auto;
+            font-size: calc(.7em + 1vw);
+            padding: 1em;
+        }
+        h1 {
+            min-height: 2.3em;
+            background: url('../icon.png');
+            background-size: 2.3em;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 3em;
+            font-weight: normal;
+            max-width: 15em;
+            color: var(--heading);
+            font-size: 1.9em;
+        }
+        h2 {
+            color: var(--subheading);
+            font-weight: normal;
+            margin-bottom: .5em;
+        }
+        p {
+            margin: 0 0 .5em 0;
+            padding:0;
+        }
+        a {
+            color: var(--links);
+        }
+        #headless:empty {
+            display: none;
+        }
+        #headless {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New Mexico Homeschool</h1>
+    </header>
+    <section>
+        <h2>Academics!</h2>
+        <p>You have successfully found the Academics Classroom.</p>
+     </section>
+    <script>
+        console.info('Hello from the startpage!')
+        if (!window.chrome) {
+            // document.querySelector('#headless').innerHTML = 'As you are using the browser without a window you can use the URL bar in the extension for that.'
+        }
+    </script>
+</body>
+</html>
